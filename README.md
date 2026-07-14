@@ -157,10 +157,20 @@ Super Market Sales.pbix
 
 # Future Improvements
 
-Forecasting
+ Sales Forecasting
+ Customer Segmentation using Machine Learning
+ Inventory Analysis
+ Demand Forecasting
+ Geographic Sales Analysis
+ Automated Report Refresh
+ Predictive Analytics
 
-Customer Segmentation
+---
 
-Market Basket Analysis
+## 👨‍💻 Author
 
-RFM Analysis
+**Katkam Sai Krishna**
+
+**Data Analyst | Power BI Developer | Python | SQL**
+
+If you found this project useful, consider ⭐ starring the repository!
