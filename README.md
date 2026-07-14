@@ -116,17 +116,31 @@ This project converts raw sales transactions into actionable business insights v
 
 ---
 
-## Related Analyses
+## Related Analyses — Netflix Content Trends & Strategic Analysis
 
-### Netflix Content Trends & Strategic Analysis
 Python | EDA | Pandas | Plotly | Seaborn
 
-- Performed exploratory data analysis (EDA) on 7,700+ Netflix titles to uncover content strategy insights across genre, country, and rating.  
-- Implemented a data preprocessing pipeline: column normalization, missing-value handling, duplicate removal, and date parsing.  
-- Created interactive visualizations (choropleth maps, trend charts) to highlight regional content distribution and publishing trends.  
-- Key findings example: Movies ≈69% of titles; U.S. and India are leading content-producing countries; TV-MA appears frequently among mature content.
+I performed exploratory data analysis (EDA) and strategic content analysis on Netflix catalogue data (cleaned dataset ~7,700 records). The work includes preprocessing, feature extraction, visual storytelling, and strategic observations about content mix and regional trends.
 
-Code, notebooks, and detailed analysis are available in the related repository(ies) — add the repo links here to point readers to the full notebooks and code.
+Key artifacts (available in the linked repositories):
+- Cleaned dataset: Cleaned_Netflix_Data.csv (contains show_id, category, title, director, cast, country, release_date, rating, duration, type, description, and parsed duration_num).
+- Notebooks: Jupyter notebooks with EDA, preprocessing, and visualizations (interactive Plotly charts and static Seaborn/Matplotlib plots).
+
+Main findings (examples):
+- Movies make up ~69% of titles in the cleaned dataset.
+- United States and India are among the top countries by content count.
+- TV-MA and TV-14 are common ratings across the catalogue; duration and format distributions vary by country and type.
+
+Repositories with code & data:
+- Netflix major project: https://github.com/SaiKrishnaKatkam/VOIS_AICTE_Oct2025_MajorProject_KATKAM-SAI-KRISHNA (contains `Cleaned_Netflix_Data.csv` and `Sai_Krishna_Katkam__major_Source_Code.ipynb`).
+- Supporting analysis: https://github.com/SaiKrishnaKatkam/VOIS_AICTE_Oct2025_SaiKrishnaKatkam (contains additional notebooks and resources).
+
+How to explore the analysis:
+1. Open the notebook(s) in the repositories above (click the links) or run them in Google Colab / Jupyter.  
+2. Load `Cleaned_Netflix_Data.csv` into a DataFrame and run the preprocessing cells (they parse durations, normalize dates, handle missing values).  
+3. View interactive Plotly charts directly in the notebooks or export static images for the README.
+
+If you'd like, I can embed a short notebook excerpt (a code cell or a sample chart) and add direct links to the specific notebooks/CSV file lines. I can also add screenshots from the Netflix analysis into this README — paste the image URLs you prefer and I'll include them.
 
 ---
 
