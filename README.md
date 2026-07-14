@@ -97,9 +97,9 @@ This project converts raw sales transactions into actionable business insights v
 
 ## Example DAX KPIs & Measures
 
-- Total Sales = SUM(Sales[Revenue])
-- Gross Profit = SUM(Sales[Revenue]) - SUM(Sales[Cost])
-- Collection Rate = DIVIDE(SUM(Payments[PaidAmount]), SUM(Sales[Revenue]))
+- Total Sales = SUM(Sales[Revenue])  
+- Gross Profit = SUM(Sales[Revenue]) - SUM(Sales[Cost])  
+- Collection Rate = DIVIDE(SUM(Payments[PaidAmount]), SUM(Sales[Revenue]))  
 - Average Order Value = AVERAGE(Sales[OrderValue])
 
 (These are illustrative — adjust names to match your model tables/columns.)
@@ -108,19 +108,33 @@ This project converts raw sales transactions into actionable business insights v
 
 ## Future Improvements
 
-- Sales forecasting using time-series models
-- Customer segmentation (CLV / RFM) using ML techniques
-- Inventory and demand forecasting
-- Geographic sales heatmaps and territory optimization
+- Sales forecasting using time-series models  
+- Customer segmentation (CLV / RFM) using ML techniques  
+- Inventory and demand forecasting  
+- Geographic sales heatmaps and territory optimization  
 - Automated dataset refresh and deployment pipeline
+
+---
+
+## Related Analyses
+
+### Netflix Content Trends & Strategic Analysis
+Python | EDA | Pandas | Plotly | Seaborn
+
+- Performed exploratory data analysis (EDA) on 7,700+ Netflix titles to uncover content strategy insights across genre, country, and rating.  
+- Implemented a data preprocessing pipeline: column normalization, missing-value handling, duplicate removal, and date parsing.  
+- Created interactive visualizations (choropleth maps, trend charts) to highlight regional content distribution and publishing trends.  
+- Key findings example: Movies ≈69% of titles; U.S. and India are leading content-producing countries; TV-MA appears frequently among mature content.
+
+Code, notebooks, and detailed analysis are available in the related repository(ies) — add the repo links here to point readers to the full notebooks and code.
 
 ---
 
 ## How to Use
 
-1. Place the source dataset(s) in the `dataset/` folder or update the data source paths in Power BI.
-2. Open `Super Market Sales.pbix` in Power BI Desktop.
-3. Refresh the report to load data and recalculate DAX measures.
+1. Place the source dataset(s) in the `dataset/` folder or update the data source paths in Power BI.  
+2. Open `Super Market Sales.pbix` in Power BI Desktop.  
+3. Refresh the report to load data and recalculate DAX measures.  
 4. Publish to Power BI Service for sharing and scheduled refresh (Pro/Workspace required).
 
 ---
