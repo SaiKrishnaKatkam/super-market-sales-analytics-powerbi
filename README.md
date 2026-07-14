@@ -1,176 +1,134 @@
-# Super Market Sales Analytics Dashboard
+# Supermarket Sales Analysis — Power BI Dashboard
 
-# Overview
+[![Power BI](https://img.shields.io/badge/Technology-Power%20BI-blue?logo=microsoft-power-bi&logoColor=white)](#) [![Author](https://img.shields.io/badge/Author-Katkam%20Sai%20Krishna-green)](#)
 
-An interactive Power BI dashboard developed to analyze supermarket sales performance, customer purchasing behavior, product trends, representative performance, and financial transactions.
+## Overview
 
+This repository contains a multi-page Power BI dashboard and supporting assets for analyzing supermarket sales. The dashboard provides insights into sales performance, product trends, sales representative contributions, and financial/payment collection metrics to help stakeholders make data-driven decisions.
 
-# Business Problem
+## Business Problem
 
-Retail companies generate massive sales data every day. Decision-makers require dashboards that provide real-time visibility into revenue, profitability, sales representatives, products, and payment collections.
+Retail organizations accumulate large volumes of transactional data that are difficult to interpret without structured reporting. Decision-makers need consolidated dashboards that surface revenue trends, profitability, product performance, and collections status to monitor business health and prioritize actions.
 
-This project converts raw transactional data into actionable business insights.
-
----
-
-# Features
-
-Executive Dashboard
-
-Representative Performance
-
-Product Performance
-
-Financial & Payment Analysis
-
-Dynamic Filters
-
-Interactive Drill-down
-
-KPIs
+This project converts raw sales transactions into actionable business insights via ETL, modeling, visualizations and KPI tracking.
 
 ---
 
-# Dashboard Pages
+## Key Features
 
-# Executive Dashboard
-
-Total Sales
-
-Total Orders
-
-Gross Profit
-
-Monthly Sales Trend
-
-Sales by Category
-
-Top Products
-
-Top Representatives
+- Executive Summary with high-level KPIs and trends
+- Representative performance analysis (sales, AOV, contribution)
+- Product performance and category analysis
+- Financial & payment collection monitoring (paid vs due, outstanding dues)
+- Interactive slicers and drill-downs (date range, region, representative, category)
+- Reusable data model built with Power Query and DAX measures
 
 ---
 
-# Representative Performance
+## Dashboard Pages & Highlights
 
-Sales by Representative
+### Executive Summary
+- Total Sales, Total Orders, Gross Profit
+- Monthly Sales Trend, Sales by Category
+- Top Products and Top Representatives
 
-Average Order Value
+### Representative Performance
+- Sales by Representative, Average Order Value (AOV)
+- Customer tier distribution, Quantity sold, Profit contribution
 
-Customer Tier Distribution
+### Product Performance
+- Top-selling products, Category-level insights
+- Product matrix and gross profit analysis
 
-Quantity Sold
-
-Profit Contribution
-
----
-
-# Product Performance
-
-Top Products
-
-Category Analysis
-
-Quantity Analysis
-
-Product Matrix
-
-Gross Profit Analysis
+### Financial & Payment Analysis
+- Payment status, Collection rate, Outstanding dues
+- Payment trends and order status distribution
 
 ---
 
-# Financial Analysis
+## Tech Stack
 
-Payment Status
-
-Collection Rate
-
-Outstanding Due
-
-Payment Trends
-
-Order Status
-
-Financial Summary
+- Power BI (report & visualizations)
+- Power Query (ETL)
+- DAX (measures & KPIs)
+- Excel, SQL (data prep & validation)
 
 ---
 
-# Tech Stack
+## Skills Demonstrated
 
-Power BI
-
-Power Query
-
-DAX
-
-Excel
-
-SQL
+- Data cleaning and transformation
+- Data modeling and relationships in Power BI
+- DAX for KPI and measure creation
+- Dashboard and KPI design for business users
+- Interactive reporting with filters and drill-downs
 
 ---
 
-# Skills Demonstrated
+## Folder Structure
 
-Data Cleaning
-
-Data Modeling
-
-Relationships
-
-DAX
-
-Dashboard Design
-
-Business Intelligence
-
-Interactive Reporting
-
-KPI Design
+- dataset/ — source dataset(s) used for analysis
+- dashboard/ — exported resources or documentation for the report
+- images/ — screenshots used in this README
+- Super Market Sales.pbix — Power BI report file
+- README.md — project documentation
 
 ---
 
-# Folder Structure
+## Screenshots
 
-dataset/
+<p align="center">
+  <img width="900" alt="Executive Dashboard" src="https://github.com/user-attachments/assets/15d51855-8bd8-4987-a344-c76398cbb292" />
+</p>
 
-dashboard/
+<p align="center">
+  <img width="900" alt="Representative Performance" src="https://github.com/user-attachments/assets/7d51cb26-d461-441a-bd50-4b872b58ab18" />
+</p>
 
-images/
+<p align="center">
+  <img width="900" alt="Product Performance Analysis" src="https://github.com/user-attachments/assets/46dc5387-32e8-4e68-bea7-1a3c9f2b1d9c" />
+</p>
 
-README.md
-
-Super Market Sales.pbix
-
----
-
-# Screenshots
-
-<img width="1417" height="807" alt="Executive Dashboard" src="https://github.com/user-attachments/assets/15d51855-8bd8-4987-a344-c76398cbb292" />
-
-<img width="1433" height="812" alt="Representative Performance" src="https://github.com/user-attachments/assets/7d51cb26-d461-441a-bd50-4b872b58ab18" />
-
-<img width="1428" height="803" alt="Product Performance Analysis" src="https://github.com/user-attachments/assets/46dc5387-32e8-4e68-bea7-1a3c9f2b1d9c" />
-
-<img width="1430" height="810" alt="Financial   Payment Analysis" src="https://github.com/user-attachments/assets/6db4dedd-ba27-41c0-86c2-df1b5812bcce" />
+<p align="center">
+  <img width="900" alt="Financial Payment Analysis" src="https://github.com/user-attachments/assets/6db4dedd-ba27-41c0-86c2-df1b5812bcce" />
+</p>
 
 ---
 
-# Future Improvements
+## Example DAX KPIs & Measures
 
- Sales Forecasting
- Customer Segmentation using Machine Learning
- Inventory Analysis
- Demand Forecasting
- Geographic Sales Analysis
- Automated Report Refresh
- Predictive Analytics
+- Total Sales = SUM(Sales[Revenue])
+- Gross Profit = SUM(Sales[Revenue]) - SUM(Sales[Cost])
+- Collection Rate = DIVIDE(SUM(Payments[PaidAmount]), SUM(Sales[Revenue]))
+- Average Order Value = AVERAGE(Sales[OrderValue])
+
+(These are illustrative — adjust names to match your model tables/columns.)
 
 ---
 
-## 👨‍💻 Author
+## Future Improvements
 
-**Katkam Sai Krishna**
+- Sales forecasting using time-series models
+- Customer segmentation (CLV / RFM) using ML techniques
+- Inventory and demand forecasting
+- Geographic sales heatmaps and territory optimization
+- Automated dataset refresh and deployment pipeline
 
-**Data Analyst | Power BI Developer | Python | SQL**
+---
 
-If you found this project useful, consider ⭐ starring the repository!
+## How to Use
+
+1. Place the source dataset(s) in the `dataset/` folder or update the data source paths in Power BI.
+2. Open `Super Market Sales.pbix` in Power BI Desktop.
+3. Refresh the report to load data and recalculate DAX measures.
+4. Publish to Power BI Service for sharing and scheduled refresh (Pro/Workspace required).
+
+---
+
+## Author
+
+**Katkam Sai Krishna** — Data Analyst | Power BI Developer | Python | SQL
+
+Connect: [LinkedIn](https://www.linkedin.com/in/katkam-sai-krishna-aa4178302/) • Email: katkamsaikrishna2004@gmail.com
+
+If you find this project useful, please ⭐ star the repository!
